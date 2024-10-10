@@ -7,7 +7,7 @@ cycler==0.10.0
 uvicorn
 python-multipart
 pillow
-numpy
+numpy<2
 pandas
 scikit-learn
 fastapi
@@ -16,3 +16,4 @@ uvloop
 httptools
 efficientnet-pytorch==0.7.1
 tqdm
+psutil
