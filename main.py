@@ -40,7 +40,7 @@ async def predict_api(file: UploadFile = File(...)):
 #     return FileResponse("test_images/" + testImg)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+    uvicorn.run(app, host='0.0.0.0', port=8000)
 """
 origins = [
     "https://gauthamsree.github.io/Plant-Leaf-Disease-Classification/#/",
