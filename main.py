@@ -34,10 +34,10 @@ async def predict_api(file: UploadFile = File(...)):
     confidence = "{:.2f}%".format(percentage)
     return {'Prediction': predicted_class, "Confidence" : str(confidence)}
 
-@app.get("/api/sample_image/")
-def predict_api():
-    testImg = random.choice(sample_images)
-    return FileResponse("test_images/" + testImg)
+# @app.get("/api/sample_image/")
+# def predict_api():
+#     testImg = random.choice(sample_images)
+#     return FileResponse("test_images/" + testImg)
 
 if __name__ == "__main__":
     uvicorn.run(app, host='localhost', port=8000)
