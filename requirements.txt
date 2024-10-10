@@ -1,0 +1,18 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.1+cpu
+torchvision==0.9.1+cpu
+aiofiles
+click==7.1.2
+cycler==0.10.0
+uvicorn
+python-multipart
+pillow
+numpy
+pandas
+scikit-learn
+fastapi
+gunicorn
+uvloop
+httptools
+efficientnet-pytorch==0.7.1
+tqdm
